@@ -1,0 +1,27 @@
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langgraph
+
+# LLM & Embeddings
+groq
+sentence-transformers
+
+# Document Processing
+pypdf
+unstructured
+python-docx
+
+# Vector Store
+chromadb
+
+# API Layer
+fastapi
+uvicorn
+python-multipart
+
+# Config & Validation
+pydantic-settings
+python-dotenv

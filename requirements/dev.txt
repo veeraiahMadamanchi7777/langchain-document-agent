@@ -1,0 +1,10 @@
+# Inherits base dependencies
+-r base.txt
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+
+# Linting & Formatting
+ruff
