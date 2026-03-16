@@ -8,3 +8,5 @@ httpx
 
 # Linting & Formatting
 ruff
+langchain-huggingface
+langchain-chroma
