@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "b8890ffd-1af2-4d6f-8b2a-c65cdcb7acab",
+		"name": "RAG",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25609268"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/health",
+				"description": "Generated from cURL: curl http://localhost:8000/health"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/chat/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"question\": \"What did the wolf do in Little Red Riding Hood?\",\n    \"document_id\": \"doc_2ab59ee0adce\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/v1/chat/",
+				"description": "Generated from cURL: curl -X POST http://localhost:8000/api/v1/chat/ \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"question\": \"What did the wolf do in Little Red Riding Hood?\",\n    \"document_id\": \"doc_2ab59ee0adce\"\n  }'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/documents/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/veeramadamanchi/Desktop/short-stories-for-children-ingles-primaria-continuemos-estudiando.pdf"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/v1/documents/upload",
+				"description": "Generated from cURL: curl -X POST http://localhost:8000/api/v1/documents/upload \\\n  -F \"file=@/Users/veeramadamanchi/Desktop/short-stories-for-children-ingles-primaria-continuemos-estudiando.pdf\"\n"
+			},
+			"response": []
+		}
+	]
+}
